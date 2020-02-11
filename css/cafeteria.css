@@ -84,3 +84,118 @@ div a {
   color: rgb(0, 0, 0);
   text-decoration: none;
 }
+
+main {
+  /* vamos aplicar uma margem interna de 20px
+  Utilizaremos o comando padding */
+  padding: 20px;
+}
+
+h2 {
+  font-family: caveat;
+  color: rgb(0, 0, 0);
+  font-size: 25pt;
+  border-bottom: 10px double rgba(0, 100, 0, 0.5);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-family: caveat;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 20pt;
+  margin-bottom: 30px;
+  letter-spacing: 5px;
+}
+
+p {
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: justify;
+  /* Aplicaremos um comando que aumenta a altura da linha. Esse efeito
+  simula o espaçamento entre linhas encontrado no Word. O comando é
+  line-height-> Linha height */
+  line-height: 30px;
+  font-family: Amatic SC;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#home {
+  background-color: rgba(0, 100, 0, 0.5);
+  text-align: center;
+}
+
+#home img {
+  height: 300px;
+  width: 300px;
+  margin: 40px;
+  /* Vamos aplicar um efeito de transparencia
+  com o comando opacity. Onde os valores 1
+  é totalmente visivel e 0 é totalmente
+  transparente */
+  opacity: 0.9;
+  border-radius: 100%;
+  transition: ease 0.9s;
+}
+
+#home img:hover {
+  opacity: 1;
+  transform: scale(1.5);
+  cursor: pointer;
+  /* transform: rotateY(360deg); */
+}
+
+#acafeteria {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#acafeteria img {
+  height: 400px;
+  width: 400px;
+  margin: 40px;
+  border-radius: 100%;
+  margin-bottom: 20px;
+}
+
+#video {
+  text-align: center;
+}
+
+/* Abaixo a formatção para a página cardápio */
+#container,
+#linha,
+#imagem,
+#texto {
+  border: 1px solid rgba(0, 100, 0, 0.5);
+}
+
+#container {
+  display: inline-block;
+}
+
+#linha {
+  display: table;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#imagem img {
+  width: 200px;
+  height: 200px;
+}
+
+#imagem {
+  width: 200px;
+  height: 200px;
+  /* Fazer a imagem flutuar para esquerda */
+  float: left;
+}
+#text {
+  padding: 20px;
+  width: 80%;
+  float: left;
+}
